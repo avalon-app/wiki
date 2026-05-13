@@ -27,6 +27,7 @@ const sidebars: SidebarsConfig = {
       label: '角色',
       link: { type: 'doc', id: 'roles/overview' },
       items: [
+        'roles/by-player-count',
         {
           type: 'category',
           label: '正义阵营',

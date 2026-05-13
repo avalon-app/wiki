@@ -1,7 +1,12 @@
 import React from 'react';
-import { playerCounts } from '@site/src/data';
+import { playerCounts, type Variant } from '@site/src/data';
 
-export default function PlayerCountTable(): JSX.Element {
+interface Props {
+  variant?: Variant;
+}
+
+export default function PlayerCountTable({ variant = 'base' }: Props): JSX.Element {
+  const rows = playerCounts.filter((row) => row.variant === variant);
   return (
     <table>
       <thead>
@@ -13,8 +18,8 @@ export default function PlayerCountTable(): JSX.Element {
         </tr>
       </thead>
       <tbody>
-        {playerCounts.map((row) => (
-          <tr key={row.players}>
+        {rows.map((row) => (
+          <tr key={`${row.variant}-${row.players}`}>
             <td>{row.players}</td>
             <td>{row.good}</td>
             <td>{row.evil}</td>

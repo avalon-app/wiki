@@ -23,13 +23,21 @@ function loadList(file) {
   return data;
 }
 
+const VALID_VARIANTS = new Set(['base', 'lancelot']);
+
 const playerCounts = loadList('player-counts.yaml');
+const pcKeys = new Set();
 for (const row of playerCounts) {
   if (typeof row.players !== 'number') err('player-counts.yaml', `players 缺失或非数字: ${JSON.stringify(row)}`);
+  if (!VALID_VARIANTS.has(row.variant))
+    err('player-counts.yaml', `${row.players} 人 variant 必须为 base/lancelot: ${row.variant}`);
+  const key = `${row.variant}-${row.players}`;
+  if (pcKeys.has(key)) err('player-counts.yaml', `(variant, players) 重复: ${key}`);
+  pcKeys.add(key);
   if (row.good + row.evil !== row.players)
-    err('player-counts.yaml', `${row.players} 人时 good+evil 不等于 players`);
+    err('player-counts.yaml', `${row.players} 人 (${row.variant}) good+evil 不等于 players`);
   if (!Array.isArray(row.missionSize) || row.missionSize.length !== 5)
-    err('player-counts.yaml', `${row.players} 人 missionSize 必须为长度 5 的数组`);
+    err('player-counts.yaml', `${row.players} 人 (${row.variant}) missionSize 必须为长度 5 的数组`);
 }
 
 const roles = loadList('roles.yaml');
@@ -45,10 +53,19 @@ for (const r of roles) {
 }
 
 const combos = loadList('role-combinations.yaml');
+const comboIds = new Set();
 for (const c of combos) {
+  if (!c.id) err('role-combinations.yaml', '存在没有 id 的条目');
+  if (comboIds.has(c.id)) err('role-combinations.yaml', `id 重复: ${c.id}`);
+  comboIds.add(c.id);
+  if (!VALID_VARIANTS.has(c.variant))
+    err('role-combinations.yaml', `${c.id} variant 必须为 base/lancelot: ${c.variant}`);
   for (const id of [...(c.good ?? []), ...(c.evil ?? [])]) {
     if (!roleIds.has(id)) err('role-combinations.yaml', `${c.id} 引用了不存在的角色: ${id}`);
   }
+  const total = (c.good?.length ?? 0) + (c.evil?.length ?? 0);
+  if (total !== c.players)
+    err('role-combinations.yaml', `${c.id} good+evil 长度 (${total}) 不等于 players (${c.players})`);
 }
 
 if (errors.length > 0) {

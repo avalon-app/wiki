@@ -11,8 +11,11 @@ export type Faction = 'good' | 'evil';
 export type Locale = 'zh' | 'en';
 export type Localized = Record<Locale, string>;
 
+export type Variant = 'base' | 'lancelot';
+
 export interface PlayerCount {
   players: number;
+  variant: Variant;
   good: number;
   evil: number;
   missionSize: [number, number, number, number, number];
@@ -30,6 +33,7 @@ export interface Role {
 export interface RoleCombination {
   id: string;
   players: number;
+  variant: Variant;
   name: Localized;
   good: string[];
   evil: string[];

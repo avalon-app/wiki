@@ -1,19 +1,89 @@
 # 推荐角色组合。good/evil 中的字符串需对应 roles.yaml 中的 id。
+# variant: base / lancelot —— 基础规则 / 启用兰斯洛特扩展
 
 - id: classic-5
   players: 5
+  variant: base
   name: { zh: 经典 5 人, en: Classic 5 }
   good: [merlin, percival, loyal_servant]
   evil: [assassin, morgana]
 
+- id: classic-6
+  players: 6
+  variant: base
+  name: { zh: 经典 6 人, en: Classic 6 }
+  good: [merlin, percival, loyal_servant, loyal_servant]
+  evil: [morgana, assassin]
+
 - id: classic-7
   players: 7
+  variant: base
   name: { zh: 经典 7 人, en: Classic 7 }
   good: [merlin, percival, loyal_servant, loyal_servant]
-  evil: [assassin, morgana, mordred]
+  evil: [morgana, assassin, oberon]
+
+- id: classic-8
+  players: 8
+  variant: base
+  name: { zh: 经典 8 人, en: Classic 8 }
+  good: [merlin, percival, loyal_servant, loyal_servant, loyal_servant]
+  evil: [morgana, assassin, minion]
+
+- id: classic-9
+  players: 9
+  variant: base
+  name: { zh: 经典 9 人, en: Classic 9 }
+  good: [merlin, percival, loyal_servant, loyal_servant, loyal_servant, loyal_servant]
+  evil: [mordred, morgana, assassin]
 
 - id: classic-10
   players: 10
+  variant: base
   name: { zh: 经典 10 人, en: Classic 10 }
   good: [merlin, percival, loyal_servant, loyal_servant, loyal_servant, loyal_servant]
   evil: [assassin, morgana, mordred, oberon]
+
+# --- 兰斯洛特扩展（与 avalon-core 内置配置保持一致） ---
+
+- id: lancelot-7
+  players: 7
+  variant: lancelot
+  name: { zh: 兰斯洛特 7 人, en: Lancelot 7 }
+  good: [merlin, percival, loyal_servant, lancelot_good]
+  evil: [morgana, assassin, lancelot_evil]
+
+- id: lancelot-8
+  players: 8
+  variant: lancelot
+  name: { zh: 兰斯洛特 8 人, en: Lancelot 8 }
+  good: [merlin, percival, loyal_servant, loyal_servant, lancelot_good]
+  evil: [morgana, assassin, lancelot_evil]
+
+- id: lancelot-9
+  players: 9
+  variant: lancelot
+  name: { zh: 兰斯洛特 9 人, en: Lancelot 9 }
+  good: [merlin, percival, loyal_servant, loyal_servant, loyal_servant, lancelot_good]
+  evil: [morgana, assassin, lancelot_evil]
+
+# 10 人 + 兰斯洛特：刺杀职责由莫甘娜承担，邪恶阵营不含「刺客」。
+- id: lancelot-10
+  players: 10
+  variant: lancelot
+  name: { zh: 兰斯洛特 10 人, en: Lancelot 10 }
+  good: [merlin, percival, loyal_servant, loyal_servant, loyal_servant, lancelot_good]
+  evil: [mordred, morgana, lancelot_evil, oberon]
+
+- id: lancelot-11
+  players: 11
+  variant: lancelot
+  name: { zh: 兰斯洛特 11 人, en: Lancelot 11 }
+  good: [merlin, percival, loyal_servant, loyal_servant, loyal_servant, loyal_servant, lancelot_good]
+  evil: [mordred, morgana, lancelot_evil, assassin]
+
+- id: lancelot-12
+  players: 12
+  variant: lancelot
+  name: { zh: 兰斯洛特 12 人, en: Lancelot 12 }
+  good: [merlin, percival, loyal_servant, loyal_servant, loyal_servant, loyal_servant, lancelot_good]
+  evil: [mordred, morgana, lancelot_evil, oberon, assassin]
