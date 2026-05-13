@@ -20,6 +20,19 @@ title: 任务流程与投票
 
 ## 3. 任务执行
 
+任务使用两种结果牌：
+
+<div style={{display: 'flex', gap: '1.5rem', alignItems: 'center', margin: '1rem 0'}}>
+  <figure style={{margin: 0, textAlign: 'center'}}>
+    <img src="/img/cards/mission-success.png" alt="任务成功牌" width="96" />
+    <figcaption>任务成功</figcaption>
+  </figure>
+  <figure style={{margin: 0, textAlign: 'center'}}>
+    <img src="/img/cards/mission-fail.png" alt="任务失败牌" width="96" />
+    <figcaption>任务失败</figcaption>
+  </figure>
+</div>
+
 - 仅被选中的队员匿名出牌。
 - 善良阵营只能出「任务成功」；邪恶阵营可以选择「任务成功」或「任务失败」。
 - 判定：

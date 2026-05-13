@@ -25,4 +25,9 @@ title: 湖中仙女
 - **公开如实告知**全场。
 - 也可以**隐瞒真相、放出错误信号**——这同样是合法操作，构成博弈空间的一部分。
 
-> 玩家头像上的**花环**标记表示当前是湖仙。
+> <img src="/img/cards/lady-of-the-lake-token.png" alt="湖中仙女令牌" width="28" style={{verticalAlign: 'middle'}} /> 玩家头像上的**花环**标记表示当前是湖仙。
+
+<figure style={{textAlign: 'center', margin: '1rem 0'}}>
+  <img src="/img/cards/lady-of-the-lake-token.png" alt="湖中仙女令牌" width="120" />
+  <figcaption>湖中仙女令牌</figcaption>
+</figure>
