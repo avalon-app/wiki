@@ -2,6 +2,8 @@
 title: Base Game
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Base Game
 
 A round of Avalon loops through four phases until a winner is decided.
@@ -18,11 +20,11 @@ Every player taps the **Identity** button to see their role and any visible info
 4. Otherwise → the leader passes **clockwise** to the next player, who proposes a new team.
 5. If a single quest sees **5 consecutive rejected proposals**, Evil (Red) wins immediately.
 
-> A crown icon on a player's avatar marks the current leader.
+> <img src={useBaseUrl('/img/cards/leader-token.png')} alt="Leader token" width="28" style={{verticalAlign: 'middle'}} /> A crown icon on a player's avatar marks the current leader.
 
 ## Quest
 
-1. Team members vote **anonymously** for Success or Fail.
+1. Team members vote **anonymously** for Success <img src={useBaseUrl('/img/cards/mission-success.png')} alt="Success" width="22" style={{verticalAlign: 'middle'}} /> or Fail <img src={useBaseUrl('/img/cards/mission-fail.png')} alt="Fail" width="22" style={{verticalAlign: 'middle'}} />.
 2. **Good (Blue)** must play Success; **Evil (Red)** may choose either.
 3. Any single Fail card causes the quest to fail — unless this is a **protected round**.
 4. **Protected round** (the 4th quest at 7+ players) requires **two Fail cards** to fail.

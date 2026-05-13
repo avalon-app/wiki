@@ -2,6 +2,8 @@
 title: Lady of the Lake
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Lady of the Lake
 
 > Typically used at **8+ players**.
@@ -13,6 +15,11 @@ title: Lady of the Lake
 3. The inspected player becomes the **next Lady of the Lake**, and after the following quest may inspect any player **who has not previously held the token**.
 4. The token continues passing in this fashion until the game ends.
 
+:::note Limits
+- Inspections happen **after quests 2, 3, and 4** — at most **3 inspections** per game; the token is not passed after quest 5 since the game is already in the assassination phase.
+- The next Lady **cannot be a player who has previously held the token** (including any earlier Lady).
+:::
+
 ## Information Handling
 
 After learning the alignment, the Lady may:
@@ -20,4 +27,9 @@ After learning the alignment, the Lady may:
 - Truthfully announce it to the table.
 - Or **lie** about it — that is also legal and part of the game's bluffing space.
 
-> A wreath icon on a player's avatar marks the current Lady of the Lake.
+> <img src={useBaseUrl('/img/cards/lady-of-the-lake-token.png')} alt="Lady of the Lake token" width="28" style={{verticalAlign: 'middle'}} /> A wreath icon on a player's avatar marks the current Lady of the Lake.
+
+<figure style={{textAlign: 'center', margin: '1rem 0'}}>
+  <img src={useBaseUrl('/img/cards/lady-of-the-lake-token.png')} alt="Lady of the Lake token" width="120" />
+  <figcaption>Lady of the Lake token</figcaption>
+</figure>

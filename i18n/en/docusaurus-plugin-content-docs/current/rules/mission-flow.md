@@ -2,6 +2,8 @@
 title: Mission Flow & Voting
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Mission Flow & Voting
 
 Each of the 5 quests follows this sequence:
@@ -19,6 +21,19 @@ Each of the 5 quests follows this sequence:
 - **5 consecutive rejections** in a single quest → Evil wins outright.
 
 ## 3. Quest Execution
+
+The quest is resolved with two outcome cards:
+
+<div style={{display: 'flex', gap: '1.5rem', alignItems: 'center', margin: '1rem 0'}}>
+  <figure style={{margin: 0, textAlign: 'center'}}>
+    <img src={useBaseUrl('/img/cards/mission-success.png')} alt="Mission Success card" width="96" />
+    <figcaption>Success</figcaption>
+  </figure>
+  <figure style={{margin: 0, textAlign: 'center'}}>
+    <img src={useBaseUrl('/img/cards/mission-fail.png')} alt="Mission Fail card" width="96" />
+    <figcaption>Fail</figcaption>
+  </figure>
+</div>
 
 - Only chosen team members play cards anonymously.
 - Good may only play Success; Evil may play Success or Fail.
