@@ -2,6 +2,8 @@
 title: 基础玩法
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 基础玩法
 
 一局阿瓦隆按以下四个阶段循环推进，直到判定胜负。
@@ -18,11 +20,11 @@ title: 基础玩法
 4. 未超过一半同意 → 当前队长**顺时针**下一位玩家成为新队长，重新组队。
 5. 同一次任务里如果**连续 5 次组队失败**，邪恶（红方）胜利。
 
-> <img src="/img/cards/leader-token.png" alt="队长令牌" width="28" style={{verticalAlign: 'middle'}} /> 玩家头像上的皇冠标记代表当前队长。
+> <img src={useBaseUrl('/img/cards/leader-token.png')} alt="队长令牌" width="28" style={{verticalAlign: 'middle'}} /> 玩家头像上的皇冠标记代表当前队长。
 
 ## 任务阶段
 
-1. 参与任务的玩家**匿名投票**出「任务成功」<img src="/img/cards/mission-success.png" alt="任务成功" width="22" style={{verticalAlign: 'middle'}} /> 或「任务失败」<img src="/img/cards/mission-fail.png" alt="任务失败" width="22" style={{verticalAlign: 'middle'}} />。
+1. 参与任务的玩家**匿名投票**出「任务成功」<img src={useBaseUrl('/img/cards/mission-success.png')} alt="任务成功" width="22" style={{verticalAlign: 'middle'}} /> 或「任务失败」<img src={useBaseUrl('/img/cards/mission-fail.png')} alt="任务失败" width="22" style={{verticalAlign: 'middle'}} />。
 2. **善良（蓝色）阵营**只能投「任务成功」；**邪恶（红色）阵营**不做限制。
 3. 只要有一张失败票，本次任务即失败；否则任务成功。
 4. **保护轮**（7 人及以上的第 4 次任务）需要 **2 张失败票**才会判定为失败。

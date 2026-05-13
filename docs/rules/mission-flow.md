@@ -2,6 +2,8 @@
 title: 任务流程与投票
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # 任务流程与投票
 
 每一轮（共 5 轮任务）按下面的顺序推进：
@@ -24,11 +26,11 @@ title: 任务流程与投票
 
 <div style={{display: 'flex', gap: '1.5rem', alignItems: 'center', margin: '1rem 0'}}>
   <figure style={{margin: 0, textAlign: 'center'}}>
-    <img src="/img/cards/mission-success.png" alt="任务成功牌" width="96" />
+    <img src={useBaseUrl('/img/cards/mission-success.png')} alt="任务成功牌" width="96" />
     <figcaption>任务成功</figcaption>
   </figure>
   <figure style={{margin: 0, textAlign: 'center'}}>
-    <img src="/img/cards/mission-fail.png" alt="任务失败牌" width="96" />
+    <img src={useBaseUrl('/img/cards/mission-fail.png')} alt="任务失败牌" width="96" />
     <figcaption>任务失败</figcaption>
   </figure>
 </div>
