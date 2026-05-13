@@ -1,0 +1,7 @@
+{
+  "sidebar.wiki.category.规则": { "message": "Rules", "description": "Sidebar category: Rules" },
+  "sidebar.wiki.category.角色": { "message": "Roles", "description": "Sidebar category: Roles" },
+  "sidebar.wiki.category.扩展": { "message": "Expansions", "description": "Sidebar category: Expansions" },
+  "sidebar.wiki.category.正义阵营": { "message": "Good", "description": "Sidebar category: Good faction" },
+  "sidebar.wiki.category.邪恶阵营": { "message": "Evil", "description": "Sidebar category: Evil faction" }
+}

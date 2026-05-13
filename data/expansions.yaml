@@ -1,0 +1,20 @@
+# 已知扩展元信息。
+
+- id: lady-of-the-lake
+  name: { zh: 湖中仙女, en: Lady of the Lake }
+  recommendedPlayers: '>=8'
+  summary:
+    zh: 一般在 8 人及以上的游戏中使用。湖仙在第 2 次任务结束后开始验人，秘密得知对方阵营，之后令牌依次传递。
+    en: Typically used at 8+ players. Starting after the 2nd quest the holder secretly inspects a player's alignment; the token then passes on.
+
+- id: excalibur
+  name: { zh: 王者之剑, en: Excalibur }
+  summary:
+    zh: 队长组队时将「王者之剑」赋予非自己的队员。任务结果揭示前，持有者可指定一名其他任务参与者，将其任务结果反向置换。
+    en: The leader grants Excalibur to a teammate (not themselves). Before quest results are revealed, the holder may flip one other participant's result.
+
+- id: lancelot
+  name: { zh: 兰斯洛特, en: Lancelot }
+  summary:
+    zh: 引入正义/邪恶两名兰斯洛特。游戏过程中可能发生阵营互换，胜负按结束时所属阵营判定。共三套子规则。
+    en: Introduces good and evil Lancelots. Their factions may swap during play; the winning side is determined by their alignment at game end. Three sub-rule variants.

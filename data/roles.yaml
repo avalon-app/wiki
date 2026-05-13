@@ -1,0 +1,83 @@
+# 阿瓦隆角色元信息。image 字段为相对 static/ 的路径。
+# faction: good / evil
+# 描述文案来源：avalon_miniapp/src/app/rules.ts
+
+- id: merlin
+  faction: good
+  name: { zh: 梅林, en: Merlin }
+  image: img/roles/merlin.png
+  summary:
+    zh: 可以看到除了「莫德雷德」以外的所有坏人；和「莫甘娜」一起被「派西维尔」看到。
+    en: Sees all evil players except Mordred; appears alongside Morgana to Percival.
+
+- id: percival
+  faction: good
+  name: { zh: 派西维尔, en: Percival }
+  image: img/roles/percival.png
+  summary:
+    zh: 可以看到「梅林」和「莫甘娜」，但是不能确定具体身份。
+    en: Sees Merlin and Morgana but cannot tell which is which.
+
+- id: loyal_servant
+  faction: good
+  name: { zh: 忠臣, en: Loyal Servant of Arthur }
+  image: img/roles/loyal-servant.png
+  summary:
+    zh: 不知道任何信息，需要通过发言找到坏人并保护梅林。
+    en: No special information; relies on discussion to find evil and protect Merlin.
+
+- id: lancelot_good
+  faction: good
+  name: { zh: 兰斯洛特（好）, en: Lancelot (Good) }
+  image: img/roles/lancelot-good.png
+  summary:
+    zh: 和坏兰斯洛特一同在游戏中，在规则 3 中可以和邪恶兰斯洛特互相看见。
+    en: Played alongside the evil Lancelot; in Rule 3 the two Lancelots see each other.
+
+- id: morgana
+  faction: evil
+  name: { zh: 莫甘娜, en: Morgana }
+  image: img/roles/morgana.png
+  summary:
+    zh: 「梅林」可以看到你是坏人；可以和队友相认；和「梅林」一起被「派西维尔」看到。
+    en: Visible to Merlin as evil; sees the other evil players; appears alongside Merlin to Percival.
+
+- id: assassin
+  faction: evil
+  name: { zh: 刺客, en: Assassin }
+  image: img/roles/assassin.png
+  summary:
+    zh: 「梅林」可以看到你是坏人；可以和队友相认；可以随时选择刺杀「梅林」。
+    en: Visible to Merlin as evil; sees fellow evil players; may attempt to assassinate Merlin at any time.
+
+- id: oberon
+  faction: evil
+  name: { zh: 奥伯伦, en: Oberon }
+  image: img/roles/oberon.png
+  summary:
+    zh: 「梅林」可以看到你是坏人；和你的队友不相见。
+    en: Visible to Merlin as evil; does not see and is not seen by other evil players.
+
+- id: mordred
+  faction: evil
+  name: { zh: 莫德雷德, en: Mordred }
+  image: img/roles/mordred.png
+  summary:
+    zh: 「梅林」看不到你是坏人；可以和队友相认。
+    en: Hidden from Merlin; sees fellow evil players.
+
+- id: minion
+  faction: evil
+  name: { zh: 爪牙, en: Minion of Mordred }
+  image: img/roles/minion.png
+  summary:
+    zh: 「梅林」可以看到你是坏人；可以和队友相认。
+    en: Visible to Merlin as evil; sees fellow evil players.
+
+- id: lancelot_evil
+  faction: evil
+  name: { zh: 兰斯洛特（坏）, en: Lancelot (Evil) }
+  image: img/roles/lancelot-evil.png
+  summary:
+    zh: 和好兰斯洛特一同在游戏中，看不见自己队友，但是可以被队友和梅林看见。在规则 3 中可以和正义兰斯洛特互相看见。
+    en: Played alongside the good Lancelot; does not see fellow evil players but is seen by them and by Merlin. In Rule 3 the two Lancelots see each other.

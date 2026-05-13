@@ -1,0 +1,15 @@
+# package.json#files is the authoritative whitelist; this is a defense-in-depth.
+docs/
+i18n/
+src/
+scripts/
+static/!(img)/
+.docusaurus/
+build/
+node_modules/
+*.log
+.editorconfig
+.nvmrc
+docusaurus.config.ts
+sidebars.ts
+tsconfig.json

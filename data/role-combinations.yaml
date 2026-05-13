@@ -1,0 +1,19 @@
+# 推荐角色组合。good/evil 中的字符串需对应 roles.yaml 中的 id。
+
+- id: classic-5
+  players: 5
+  name: { zh: 经典 5 人, en: Classic 5 }
+  good: [merlin, percival, loyal_servant]
+  evil: [assassin, morgana]
+
+- id: classic-7
+  players: 7
+  name: { zh: 经典 7 人, en: Classic 7 }
+  good: [merlin, percival, loyal_servant, loyal_servant]
+  evil: [assassin, morgana, mordred]
+
+- id: classic-10
+  players: 10
+  name: { zh: 经典 10 人, en: Classic 10 }
+  good: [merlin, percival, loyal_servant, loyal_servant, loyal_servant, loyal_servant]
+  evil: [assassin, morgana, mordred, oberon]

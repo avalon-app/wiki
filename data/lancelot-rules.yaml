@@ -1,0 +1,48 @@
+# 兰斯洛特扩展的三套子规则。
+# 字段：
+#   id:    rule1 / rule2 / rule3
+#   brief: 一句话概览
+#   detail: 详细说明的多行文字
+
+- id: rule1
+  title: { zh: 规则 1, en: Rule 1 }
+  brief:
+    zh: 从第 3 个任务开始，每次队长组队前抽取一张「阵营转换卡」，可能发生 1 到 2 次「阵营转换」。
+    en: From quest 3 onward, the leader draws a swap card before each team build; 0–2 swaps may occur.
+  detail:
+    zh:
+      - 一共有 5 张「阵营转换卡」，其中 3 张「空白」，2 张「阵营转换」。
+      - 如果抽取到「阵营转换」，则两个「兰斯洛特」的身份互相对调。
+      - 从第 3 个任务开始，每次队长组队前都抽取一张「阵营转换卡」，在一轮游戏过程中，有可能发生 1 次、2 次或 0 次「阵营转换」。
+    en:
+      - The deck contains 5 swap cards — 3 blank, 2 "swap".
+      - Drawing a "swap" card swaps the two Lancelots' alignments.
+      - From quest 3 onward, the leader draws one card before each proposal; 0, 1, or 2 swaps may occur during the game.
+
+- id: rule2
+  title: { zh: 规则 2, en: Rule 2 }
+  brief:
+    zh: 游戏开始时随机抽选 5 张「阵营转换卡」并亮出，每次任务开始时根据卡片判断「兰斯洛特」是否转变阵营，坏人阵营的「兰斯洛特」只能出「任务失败」。
+    en: 5 swap cards are revealed at game start; alignment changes are evaluated each quest. The evil-aligned Lancelot must play Fail on quests.
+  detail:
+    zh:
+      - 一共有 7 张「阵营转换卡」，其中 5 张「空白」，2 张「阵营转换」。在游戏最开始，随机抽选 5 张「阵营转换卡」并全部亮出，按顺序对应到 5 次任务中。
+      - 每次任务开始时，根据「阵营转换卡」判断「兰斯洛特」是否转变阵营。在一轮游戏过程中，有可能发生 1 次、2 次或 0 次「阵营转换」。
+      - 另外，在「兰斯洛特」处于坏人阵营时，做任务的时候只能出「任务失败」。
+    en:
+      - The deck contains 7 swap cards — 5 blank, 2 "swap"; 5 are randomly selected and revealed at the start, one per quest.
+      - At the start of each quest the corresponding card determines whether the two Lancelots swap. 0–2 swaps may occur.
+      - When the Lancelot is on the evil side, they must play Fail when participating in a quest.
+
+- id: rule3
+  title: { zh: 规则 3, en: Rule 3 }
+  brief:
+    zh: 「兰斯洛特」不会发生阵营转换，但好、坏阵营的「兰斯洛特」可以互相看到对方。
+    en: Lancelots never swap; the good and evil Lancelots simply see each other.
+  detail:
+    zh:
+      - 「兰斯洛特」不会发生阵营转换。
+      - 好、坏阵营的「兰斯洛特」可以互相看到对方。
+    en:
+      - Lancelots never change alignment.
+      - The good and evil Lancelots can see each other.

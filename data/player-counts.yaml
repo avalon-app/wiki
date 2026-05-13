@@ -1,0 +1,36 @@
+# 不同人数下的阵营分布
+# 字段：
+#   players: 总人数
+#   good:    正义阵营人数
+#   evil:    邪恶阵营人数
+#   missionSize: 第 1..5 轮任务的人数（length = 5）
+#   doubleFailRound: 失败需要 2 张失败牌的轮次（仅 7 人以上的第 4 轮）
+
+- players: 5
+  good: 3
+  evil: 2
+  missionSize: [2, 3, 2, 3, 3]
+- players: 6
+  good: 4
+  evil: 2
+  missionSize: [2, 3, 4, 3, 4]
+- players: 7
+  good: 4
+  evil: 3
+  missionSize: [2, 3, 3, 4, 4]
+  doubleFailRound: 4
+- players: 8
+  good: 5
+  evil: 3
+  missionSize: [3, 4, 4, 5, 5]
+  doubleFailRound: 4
+- players: 9
+  good: 6
+  evil: 3
+  missionSize: [3, 4, 4, 5, 5]
+  doubleFailRound: 4
+- players: 10
+  good: 6
+  evil: 4
+  missionSize: [3, 4, 4, 5, 5]
+  doubleFailRound: 4

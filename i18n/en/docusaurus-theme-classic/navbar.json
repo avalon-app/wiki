@@ -1,0 +1,5 @@
+{
+  "item.label.规则": { "message": "Rules", "description": "Navbar item: Rules" },
+  "item.label.角色": { "message": "Roles", "description": "Navbar item: Roles" },
+  "item.label.GitHub": { "message": "GitHub", "description": "Navbar item: GitHub" }
+}

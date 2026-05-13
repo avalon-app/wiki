@@ -1,0 +1,61 @@
+{
+  "name": "@avalon-app/wiki",
+  "version": "0.1.0",
+  "description": "Avalon 桌游规则、角色与美术资源 Wiki",
+  "private": false,
+  "license": "CC-BY-NC-SA-4.0",
+  "files": [
+    "data",
+    "dist-data",
+    "static/img",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    "./data/*": "./dist-data/*.json",
+    "./assets/*": "./static/img/*"
+  },
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve",
+    "clear": "docusaurus clear",
+    "prestart": "pnpm build:data",
+    "prebuild": "pnpm build:data",
+    "build:data": "node scripts/build-data.mjs",
+    "validate:data": "node scripts/validate-data.mjs",
+    "prepack": "pnpm validate:data && pnpm build:data",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.5.0",
+    "@docusaurus/preset-classic": "^3.5.0",
+    "@mdx-js/react": "^3.0.0",
+    "clsx": "^2.1.0",
+    "prism-react-renderer": "^2.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "^3.5.0",
+    "@docusaurus/tsconfig": "^3.5.0",
+    "@docusaurus/types": "^3.5.0",
+    "@types/node": "^20.11.0",
+    "typescript": "~5.5.0",
+    "yaml": "^2.4.0"
+  },
+  "browserslist": {
+    "production": [">0.5%", "not dead", "not op_mini all"],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=20.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}
