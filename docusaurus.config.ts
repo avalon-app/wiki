@@ -9,8 +9,8 @@ const config: Config = {
   tagline: '阿瓦隆桌游规则、角色与美术资源',
   favicon: 'img/favicon.png',
 
-  url: 'https://avalon-app.github.io',
-  baseUrl: '/wiki/',
+  url: 'https://avalon-wiki.enmo.fun',
+  baseUrl: '/',
 
   organizationName: 'avalon-app',
   projectName: 'wiki',
